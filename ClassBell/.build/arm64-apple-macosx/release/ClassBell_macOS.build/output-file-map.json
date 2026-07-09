@@ -1,0 +1,49 @@
+{
+  "": {
+    "dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/ClassBell_macOS.d",
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/ClassBell_macOS.o",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/master.swiftdeps"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/AppState.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/AppState.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/AppState~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/AppState.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/AppState.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/ClassBellApp.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/ClassBellApp.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/ClassBellApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/ClassBellApp.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/ClassBellApp.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Services/AudioService.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/AudioService.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/AudioService~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/AudioService.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/AudioService.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/ContentView.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/ContentView.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/ContentView.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/DayConfigView.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/DayConfigView.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/DayConfigView~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/DayConfigView.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/DayConfigView.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/MenuBarView.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/MenuBarView.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/MenuBarView~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/MenuBarView.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/MenuBarView.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/SoundSettingsView.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/SoundSettingsView.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/SoundSettingsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/SoundSettingsView.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_macOS.build/SoundSettingsView.dia"
+  }
+}

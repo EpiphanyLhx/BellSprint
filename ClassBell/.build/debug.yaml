@@ -1,0 +1,104 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "ClassBell-arm64-apple-macosx-debug.exe": ["<ClassBell-arm64-apple-macosx-debug.exe>"]
+  "ClassBell-arm64-apple-macosx-debug.module": ["<ClassBell-arm64-apple-macosx-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<ClassBell-arm64-apple-macosx-debug.exe>","<ClassBell-arm64-apple-macosx-debug.module>"]
+  "test": ["<ClassBell-arm64-apple-macosx-debug.exe>","<ClassBell-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell":
+    is-mutated: true
+commands:
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell-entitlement.plist"]
+    description: "Write auxiliary file /Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell-entitlement.plist"
+
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/AppState.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/ClassBellApp.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Models/Models.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Services/AudioService.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Services/BellScheduler.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/ContentView.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/DayConfigView.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/MenuBarView.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/SoundSettingsView.swift","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/DerivedSources/resource_bundle_accessor.swift"]
+    outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/sources"]
+    description: "Write auxiliary file /Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/sources"
+
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/AppState.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/AudioService.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/BellScheduler.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/ClassBellApp.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/ContentView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/DayConfigView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/MenuBarView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/Models.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/SoundSettingsView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/resource_bundle_accessor.swift.o"]
+    outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.product/Objects.LinkFileList"
+
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell_ClassBell.bundle/end_bell.wav":
+    tool: copy-tool
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Resources/end_bell.wav"]
+    outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell_ClassBell.bundle/end_bell.wav"]
+    description: "Copying /Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Resources/end_bell.wav"
+
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell_ClassBell.bundle/pre_bell.wav":
+    tool: copy-tool
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Resources/pre_bell.wav"]
+    outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell_ClassBell.bundle/pre_bell.wav"]
+    description: "Copying /Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Resources/pre_bell.wav"
+
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell_ClassBell.bundle/start_bell.wav":
+    tool: copy-tool
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Resources/start_bell.wav"]
+    outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell_ClassBell.bundle/start_bell.wav"]
+    description: "Copying /Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Resources/start_bell.wav"
+
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<ClassBell-arm64-apple-macosx-debug.exe>":
+    tool: phony
+    inputs: ["<ClassBell-arm64-apple-macosx-debug.exe-CodeSigning>"]
+    outputs: ["<ClassBell-arm64-apple-macosx-debug.exe>"]
+
+  "<ClassBell-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/AppState.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/ClassBellApp.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/Models.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/AudioService.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/BellScheduler.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/ContentView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/DayConfigView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/MenuBarView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/SoundSettingsView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/resource_bundle_accessor.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/Modules/ClassBell.swiftmodule"]
+    outputs: ["<ClassBell-arm64-apple-macosx-debug.module>"]
+
+  "C.ClassBell-arm64-apple-macosx-debug.exe":
+    tool: shell
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/AppState.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/AudioService.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/BellScheduler.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/ClassBellApp.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/ContentView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/DayConfigView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/MenuBarView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/Models.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/SoundSettingsView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/resource_bundle_accessor.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.product/Objects.LinkFileList"]
+    outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/ClassBell"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug","-o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell","-module-name","ClassBell","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_ClassBell_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/Modules/ClassBell.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.ClassBell-arm64-apple-macosx-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell-entitlement.plist"]
+    outputs: ["<ClassBell-arm64-apple-macosx-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/ClassBell"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell-entitlement.plist","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell"]
+
+  "C.ClassBell-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/AppState.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/ClassBellApp.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Models/Models.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Services/AudioService.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Services/BellScheduler.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/ContentView.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/DayConfigView.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/MenuBarView.swift","/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/SoundSettingsView.swift","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/DerivedSources/resource_bundle_accessor.swift","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","<ClassBell-arm64-apple-macosx-debug.module-resources>","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/sources"]
+    outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/AppState.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/ClassBellApp.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/Models.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/AudioService.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/BellScheduler.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/ContentView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/DayConfigView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/MenuBarView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/SoundSettingsView.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/resource_bundle_accessor.swift.o","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/Modules/ClassBell.swiftmodule"]
+    description: "Compiling Swift Module 'ClassBell' (10 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ClassBell","-emit-dependencies","-emit-module","-emit-module-path","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/Modules/ClassBell.swiftmodule","-output-file-map","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/output-file-map.json","-incremental","-c","@/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell.build/sources","-I","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE","-module-cache-path","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","ClassBell_main","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","classbell"]
+
+  "ClassBell-arm64-apple-macosx-debug.module-resources":
+    tool: phony
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell_ClassBell.bundle/end_bell.wav","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell_ClassBell.bundle/pre_bell.wav","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/debug/ClassBell_ClassBell.bundle/start_bell.wav"]
+    outputs: ["<ClassBell-arm64-apple-macosx-debug.module-resources>"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/","/Users/LHX/Desktop/时钟/ClassBell/Package.swift","/Users/LHX/Desktop/时钟/ClassBell/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

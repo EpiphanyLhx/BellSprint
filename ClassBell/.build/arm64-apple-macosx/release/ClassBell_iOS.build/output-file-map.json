@@ -1,0 +1,43 @@
+{
+  "": {
+    "dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/ClassBell_iOS.d",
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/ClassBell_iOS.o",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/master.swiftdeps"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell-iOS/AppState.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/AppState.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/AppState~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/AppState.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/AppState.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell-iOS/AudioService.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/AudioService.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/AudioService~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/AudioService.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/AudioService.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell-iOS/ClassBellApp.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/ClassBellApp.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/ClassBellApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/ClassBellApp.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/ClassBellApp.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell-iOS/Views/ScheduleView.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/ScheduleView.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/ScheduleView~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/ScheduleView.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/ScheduleView.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell-iOS/Views/SettingsView.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/SettingsView.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/SettingsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/SettingsView.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/SettingsView.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell-iOS/Views/SoundSettingsView.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/SoundSettingsView.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/SoundSettingsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/SoundSettingsView.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_iOS.build/SoundSettingsView.dia"
+  }
+}

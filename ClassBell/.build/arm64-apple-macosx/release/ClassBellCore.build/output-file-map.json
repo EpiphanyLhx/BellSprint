@@ -1,0 +1,31 @@
+{
+  "": {
+    "dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/ClassBellCore.d",
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/ClassBellCore.o",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/master.swiftdeps"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBellCore/BellScheduler.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/BellScheduler.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/BellScheduler~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/BellScheduler.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/BellScheduler.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBellCore/Models.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/Models.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/Models~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/Models.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/Models.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBellCore/ResourceHelper.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/ResourceHelper.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/ResourceHelper~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/ResourceHelper.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/ResourceHelper.dia"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/DerivedSources/resource_bundle_accessor.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBellCore.build/resource_bundle_accessor.dia"
+  }
+}
