@@ -24,6 +24,7 @@ struct BreakConfig: Codable, Equatable {
 struct CourseConfig: Codable, Identifiable, Equatable {
     var id: Int          // 课程编号 1,2,3...
     var name: String     // 科目名称
+    var showInMenuBar = true
     var startHour: Int
     var startMinute: Int
     var endHour: Int

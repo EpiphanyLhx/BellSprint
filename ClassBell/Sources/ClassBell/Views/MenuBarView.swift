@@ -97,30 +97,25 @@ struct MenuBarView: View {
                     .padding(.horizontal, 12)
                     .padding(.bottom, 6)
                 } else {
-                    ScrollView {
-                        VStack(spacing: 0) {
-                            ForEach(todayCourses) { course in
-                                HStack(spacing: 8) {
-                                    Text("\(course.id)")
-                                        .font(.system(.caption, design: .rounded).bold())
-                                        .frame(width: 24, height: 20)
-                                        .background(Color.accentColor.opacity(0.15))
-                                        .cornerRadius(4)
-                                    Text(course.name.isEmpty ? "第\(course.id)节" : course.name)
-                                        .font(.body)
-                                        .lineLimit(1)
-                                    Spacer()
-                                    Text("\(course.startString) - \(course.endString)")
-                                        .font(.system(.caption, design: .monospaced))
-                                        .foregroundColor(.secondary)
-                                }
-                                .padding(.horizontal, 12)
-                                .padding(.vertical, 4)
-                                Divider().opacity(0.3)
-                            }
+                    List(todayCourses) { course in
+                        HStack(spacing: 8) {
+                            Text("\(course.id)")
+                                .font(.system(.caption, design: .rounded).bold())
+                                .frame(width: 24, height: 20)
+                                .background(Color.accentColor.opacity(0.15))
+                                .cornerRadius(4)
+                            Text(course.name.isEmpty ? "第\(course.id)节" : course.name)
+                                .font(.body)
+                                .lineLimit(1)
+                            Spacer()
+                            Text("\(course.startString) - \(course.endString)")
+                                .font(.system(.caption, design: .monospaced))
+                                .foregroundColor(.secondary)
                         }
+                        .padding(.vertical, 2)
                     }
-                    .frame(maxHeight: 200)
+                    .listStyle(.plain)
+                    .frame(height: min(CGFloat(todayCourses.count) * 36, 200))
                 }
             }
             
@@ -185,7 +180,7 @@ struct MenuBarView: View {
         let weekdayIndex = calendar.component(.weekday, from: Date())
         let today = Weekday.fromCalendar(weekdayIndex)
         guard let config = appState.dayConfigs.first(where: { $0.day == today }), config.isActive else { return [] }
-        return config.courses.sorted { $0.id < $1.id }
+        return config.courses.sorted { $0.id < $1.id }.filter { $0.showInMenuBar }
     }
     
     private func colorForType(_ type: BellType) -> Color {

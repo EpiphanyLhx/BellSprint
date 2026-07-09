@@ -265,7 +265,20 @@ struct CourseRowView: View {
     
     var body: some View {
         HStack(spacing: 8) {
-            Text("\(course.id)").font(.system(.caption, design: .rounded).bold())
+            HStack(spacing: 2) {
+                Button(action: {
+                    course.showInMenuBar.toggle()
+                    appState.updateConfig(config)
+                }) {
+                    Image(systemName: course.showInMenuBar ? "eye" : "eye.slash")
+                        .font(.system(size: 10))
+                        .foregroundColor(course.showInMenuBar ? .accentColor : .secondary)
+                }
+                .buttonStyle(.plain)
+                .help("\(course.showInMenuBar ? "隐藏" : "显示")在菜单栏")
+                Text("\(course.id)")
+                    .font(.system(.caption, design: .rounded).bold())
+            }
                 .frame(width: 44, height: 28).background(Color.accentColor.opacity(0.15)).cornerRadius(6)
             Text("第\(course.id)节").font(.system(.body, design: .monospaced)).frame(width: 32)
             if config.preBellMinutes > 0 {
