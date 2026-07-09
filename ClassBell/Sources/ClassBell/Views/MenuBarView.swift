@@ -3,97 +3,189 @@ import SwiftUI
 struct MenuBarView: View {
     @EnvironmentObject var appState: AppState
     @Environment(\.openWindow) private var openWindow
+    @State private var currentTime = Date()
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            HStack {
-                Image(systemName: "bell.fill")
+        VStack(alignment: .leading, spacing: 0) {
+            // ── 顶部状态栏 ──
+            HStack(spacing: 8) {
+                Image(systemName: "bell.badge.fill")
+                    .font(.title3)
                     .foregroundColor(appState.isEnabled ? .green : .red)
-                Text("上下课铃声")
-                    .font(.headline)
+                
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("上下课铃声")
+                        .font(.headline)
+                    Text(timeString)
+                        .font(.system(.caption2, design: .monospaced))
+                        .foregroundColor(.secondary)
+                }
+                
                 Spacer()
-                Circle()
-                    .fill(appState.isEnabled ? Color.green : Color.red)
-                    .frame(width: 6, height: 6)
+                
+                Toggle("", isOn: $appState.isEnabled)
+                    .toggleStyle(.switch)
+                    .labelsHidden()
+                    .controlSize(.small)
+                    .help(appState.isEnabled ? "点击暂停" : "点击恢复")
             }
-            .padding(.horizontal, 10)
-            
-            HStack {
-                Text("下一个:")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                Text(appState.nextEventText)
-                    .font(.system(.caption, design: .monospaced))
-                Spacer()
-            }
-            .padding(.horizontal, 10)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
             
             Divider()
             
-            if !appState.todayEvents.isEmpty {
-                Text("今日铃声")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .padding(.horizontal, 10)
-                ForEach(0..<min(appState.todayEvents.count, 4), id: \.self) { i in
-                    let event = appState.todayEvents[i]
-                    HStack(spacing: 6) {
-                        Image(systemName: event.type.symbol)
-                            .foregroundColor(colorForType(event.type))
-                            .frame(width: 14)
-                        Text(event.timeString)
-                            .font(.system(.body, design: .monospaced))
-                            .frame(width: 38, alignment: .leading)
-                        Text(event.type.rawValue)
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                        Spacer()
-                        Text("第\(event.classNumber)节")
-                            .font(.caption2)
-                            .foregroundColor(.secondary)
-                    }
-                    .padding(.horizontal, 10)
+            // ── 下一个事件 ──
+            VStack(spacing: 4) {
+                HStack {
+                    Text("下一个")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                    Spacer()
                 }
-                if appState.todayEvents.count > 4 {
-                    Text("还有 \(appState.todayEvents.count - 4) 个铃声...")
+                HStack(spacing: 8) {
+                    Image(systemName: "play.circle.fill")
+                        .foregroundColor(appState.nextEventText == "今日无课" || appState.nextEventText == "已结束" ? .secondary : .accentColor)
+                        .font(.title2)
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text(appState.nextEventText)
+                            .font(.system(.body, design: .monospaced))
+                            .foregroundColor(appState.nextEventText == "今日无课" ? .secondary : .primary)
+                        if appState.nextEventText != "今日无课" && appState.nextEventText != "暂无" && appState.nextEventText != "已结束" {
+                            let parts = appState.nextEventText.split(separator: " ")
+                            if parts.count >= 2 {
+                                Text(String(parts[0]))
+                                    .font(.caption2)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                    }
+                    Spacer()
+                }
+            }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
+            
+            Divider()
+            
+            // ── 今日课程 ──
+            VStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    Image(systemName: "list.bullet.rectangle")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                    Text("今日课程")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                    Spacer()
+                    Text("共 \(todayCourses.count) 节")
                         .font(.caption2)
                         .foregroundColor(.secondary)
-                        .padding(.horizontal, 10)
                 }
-            } else {
-                Text("今日无课")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .padding(.horizontal, 10)
+                .padding(.horizontal, 12)
+                .padding(.top, 6)
+                
+                if todayCourses.isEmpty {
+                    HStack {
+                        Image(systemName: "moon.zzz")
+                            .foregroundColor(.secondary)
+                            .font(.caption)
+                        Text("今日无课")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                    .padding(.horizontal, 12)
+                    .padding(.bottom, 6)
+                } else {
+                    ScrollView {
+                        VStack(spacing: 0) {
+                            ForEach(todayCourses) { course in
+                                HStack(spacing: 8) {
+                                    Text("\(course.id)")
+                                        .font(.system(.caption, design: .rounded).bold())
+                                        .frame(width: 24, height: 20)
+                                        .background(Color.accentColor.opacity(0.15))
+                                        .cornerRadius(4)
+                                    Text(course.name.isEmpty ? "第\(course.id)节" : course.name)
+                                        .font(.body)
+                                        .lineLimit(1)
+                                    Spacer()
+                                    Text("\(course.startString) - \(course.endString)")
+                                        .font(.system(.caption, design: .monospaced))
+                                        .foregroundColor(.secondary)
+                                }
+                                .padding(.horizontal, 12)
+                                .padding(.vertical, 4)
+                                Divider().opacity(0.3)
+                            }
+                        }
+                    }
+                    .frame(maxHeight: 200)
+                }
             }
             
             Divider()
             
-            Button(appState.isEnabled ? "暂停铃声" : "恢复铃声") {
-                appState.isEnabled.toggle()
+            // ── 操作按钮 ──
+            VStack(spacing: 0) {
+                MenuBarActionButton(
+                    icon: appState.isEnabled ? "pause.circle" : "play.circle",
+                    title: appState.isEnabled ? "暂停铃声" : "恢复铃声",
+                    action: { appState.isEnabled.toggle() }
+                )
+                Divider().opacity(0.3)
+                MenuBarActionButton(
+                    icon: "speaker.wave.2",
+                    title: "测试铃声",
+                    action: { AudioService().play(.start) }
+                )
+                Divider().opacity(0.3)
+                MenuBarActionButton(
+                    icon: "gearshape",
+                    title: "打开设置",
+                    action: {
+                        openWindow(id: "settings")
+                        NSApp.activate(ignoringOtherApps: true)
+                    }
+                )
             }
-            .padding(.horizontal, 10)
-            
-            Button("🔊 测试铃声") {
-                AudioService().play(.start)
-            }
-            .padding(.horizontal, 10)
-            
-            Button("⚙️ 打开设置") {
-                openWindow(id: "settings")
-                NSApp.activate(ignoringOtherApps: true)
-            }
-            .padding(.horizontal, 10)
             
             Divider()
             
-            Button("退出") {
-                NSApplication.shared.terminate(nil)
+            // ── 退出 ──
+            Button(action: { NSApplication.shared.terminate(nil) }) {
+                HStack(spacing: 6) {
+                    Image(systemName: "xmark.circle")
+                        .font(.system(size: 12))
+                        .foregroundColor(.secondary)
+                    Text("退出")
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                    Spacer()
+                }
+                .contentShape(Rectangle())
             }
-            .padding(.horizontal, 10)
+            .buttonStyle(.plain)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
         }
-        .padding(.vertical, 6)
-        .frame(width: 240)
+        .padding(.vertical, 4)
+        .frame(width: 260)
+        .onReceive(timer) { _ in currentTime = Date() }
+    }
+    
+    private var timeString: String {
+        let fmt = DateFormatter()
+        fmt.dateFormat = "HH:mm:ss"
+        return fmt.string(from: currentTime)
+    }
+    
+    private var todayCourses: [CourseConfig] {
+        let calendar = Calendar.current
+        let weekdayIndex = calendar.component(.weekday, from: Date())
+        let today = Weekday.fromCalendar(weekdayIndex)
+        guard let config = appState.dayConfigs.first(where: { $0.day == today }), config.isActive else { return [] }
+        return config.courses.sorted { $0.id < $1.id }
     }
     
     private func colorForType(_ type: BellType) -> Color {
@@ -102,5 +194,31 @@ struct MenuBarView: View {
         case .start: return .green
         case .end: return .red
         }
+    }
+}
+
+struct MenuBarActionButton: View {
+    let icon: String
+    let title: String
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 8) {
+                Image(systemName: icon)
+                    .font(.system(size: 13))
+                    .frame(width: 16)
+                Text(title)
+                    .font(.body)
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 10))
+                    .foregroundColor(.secondary.opacity(0.5))
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
     }
 }
