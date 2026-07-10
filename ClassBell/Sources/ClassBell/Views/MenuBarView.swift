@@ -98,19 +98,22 @@ struct MenuBarView: View {
                     .padding(.bottom, 6)
                 } else {
                     List(todayCourses) { course in
-                        HStack(spacing: 8) {
+                        HStack(spacing: 6) {
                             Text("\(course.id)")
                                 .font(.system(.caption, design: .rounded).bold())
-                                .frame(width: 24, height: 20)
+                                .frame(width: 20, height: 18)
                                 .background(Color.accentColor.opacity(0.15))
                                 .cornerRadius(4)
-                            Text(course.name.isEmpty ? "第\(course.id)节" : course.name)
-                                .font(.body)
-                                .lineLimit(1)
+                            VStack(alignment: .leading, spacing: 0) {
+                                Text(course.name.isEmpty ? "未设置" : course.name)
+                                    .font(.body)
+                                    .foregroundColor(course.name.isEmpty ? .secondary : .primary)
+                                    .lineLimit(1)
+                                Text("\(course.startString) - \(course.endString)")
+                                    .font(.system(.caption2, design: .monospaced))
+                                    .foregroundColor(.secondary)
+                            }
                             Spacer()
-                            Text("\(course.startString) - \(course.endString)")
-                                .font(.system(.caption, design: .monospaced))
-                                .foregroundColor(.secondary)
                         }
                         .padding(.vertical, 2)
                     }

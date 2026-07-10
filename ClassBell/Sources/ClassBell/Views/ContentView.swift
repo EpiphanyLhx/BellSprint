@@ -43,6 +43,22 @@ struct ContentView: View {
                     }
                     Divider()
                     HStack {
+                        HStack(spacing: 6) {
+                            Image(systemName: "power")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                            Text("开机自启动")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                            Toggle("", isOn: Binding(
+                                get: { appState.launchAtLogin },
+                                set: { appState.launchAtLogin = $0 }
+                            ))
+                            .toggleStyle(.switch)
+                            .labelsHidden()
+                            .controlSize(.small)
+                        }
+                        .padding(.horizontal, 8)
                         Spacer()
                         Button(action: { showSoundSheet = true }) {
                             Label("自定义铃声", systemImage: "music.note")
