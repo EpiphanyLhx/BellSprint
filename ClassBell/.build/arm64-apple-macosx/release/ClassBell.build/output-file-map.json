@@ -58,6 +58,12 @@
     "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/SoundSettingsView.swiftdeps",
     "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/SoundSettingsView.dia"
   },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/TimeFieldFormatter.swift": {
+    "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/TimeFieldFormatter.swift.o",
+    "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/TimeFieldFormatter~partial.swiftmodule",
+    "swift-dependencies": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/TimeFieldFormatter.swiftdeps",
+    "diagnostics": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/TimeFieldFormatter.dia"
+  },
   "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/DerivedSources/resource_bundle_accessor.swift": {
     "object": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/resource_bundle_accessor.swift.o",
     "swiftmodule": "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/resource_bundle_accessor~partial.swiftmodule",

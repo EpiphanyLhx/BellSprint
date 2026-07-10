@@ -129,6 +129,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/TimeFieldFormatter.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/DerivedSources/resource_bundle_accessor.swift"
         },
         {
@@ -157,6 +161,7 @@
         "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/DayConfigView.swift.o",
         "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/MenuBarView.swift.o",
         "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/SoundSettingsView.swift.o",
+        "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/TimeFieldFormatter.swift.o",
         "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/resource_bundle_accessor.swift.o"
       ],
       "otherArguments" : [
@@ -245,6 +250,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/TimeFieldFormatter.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/resource_bundle_accessor.swift.o"
         },
         {
@@ -263,6 +272,7 @@
         "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/DayConfigView.swift",
         "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/MenuBarView.swift",
         "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/SoundSettingsView.swift",
+        "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/TimeFieldFormatter.swift",
         "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/DerivedSources/resource_bundle_accessor.swift"
       ],
       "tempsPath" : "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build",
@@ -289,6 +299,7 @@
       "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/DayConfigView.swift",
       "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/MenuBarView.swift",
       "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/SoundSettingsView.swift",
+      "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/TimeFieldFormatter.swift",
       "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/DerivedSources/resource_bundle_accessor.swift",
       "-I",
       "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/Modules",
@@ -402,6 +413,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/TimeFieldFormatter.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/DerivedSources/resource_bundle_accessor.swift"
         }
       ],
@@ -449,6 +464,10 @@
         {
           "kind" : "file",
           "name" : "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/SoundSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.build/TimeFieldFormatter.swift.o"
         },
         {
           "kind" : "file",

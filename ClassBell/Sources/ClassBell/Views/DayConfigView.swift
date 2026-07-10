@@ -8,15 +8,9 @@ struct DayConfigView: View {
     @State private var isCascading = false
     @State private var courseSnapshots: [Int: (start: Int, end: Int)] = [:]
     
-    private let hhFmt: NumberFormatter = {
-        let f = NumberFormatter(); f.minimumIntegerDigits = 2; f.maximumIntegerDigits = 2; f.minimum = 0; f.maximum = 23; return f
-    }()
-    private let mmFmt: NumberFormatter = {
-        let f = NumberFormatter(); f.minimumIntegerDigits = 2; f.maximumIntegerDigits = 2; f.minimum = 0; f.maximum = 59; return f
-    }()
-    private let durFmt: NumberFormatter = {
-        let f = NumberFormatter(); f.minimum = 10; f.maximum = 180; return f
-    }()
+    private let hhFmt = HourFormatter()
+    private let mmFmt = MinuteFormatter()
+    private let durFmt = DurationFieldFormatter()
     
     private var conflicts: [ConflictResult] { config.conflicts() }
     
@@ -274,7 +268,7 @@ struct CourseRowView: View {
     @Binding var course: CourseConfig
     @Binding var config: DayConfig
     let appState: AppState
-    let hhFmt: NumberFormatter; let mmFmt: NumberFormatter; let durFmt: NumberFormatter
+    let hhFmt: HourFormatter; let mmFmt: MinuteFormatter; let durFmt: DurationFieldFormatter
     let onTimeChanged: (Int) -> Void
     let onDelete: () -> Void
     
