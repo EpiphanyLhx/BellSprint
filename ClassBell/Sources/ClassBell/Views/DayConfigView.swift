@@ -61,10 +61,18 @@ struct DayConfigView: View {
                                 DispatchQueue.main.async {
                                     var d = globalDuration
                                     if d < 10 { d = 10; globalDuration = d }
-                                    for i in config.courses.indices {
-                                        let newEnd = config.courses[i].startMinuteOfDay + d
-                                        config.courses[i].endHour = newEnd / 60
-                                        config.courses[i].endMinute = newEnd % 60
+                                    guard !config.courses.isEmpty else { return }
+                                    let sorted = config.courses.sorted { $0.id < $1.id }
+                                    for c in sorted {
+                                        let oldEnd = c.endMinuteOfDay
+                                        let newEnd = c.startMinuteOfDay + d
+                                        let delta = newEnd - oldEnd
+                                        guard delta != 0 else { continue }
+                                        if let idx = config.courses.firstIndex(where: { $0.id == c.id }) {
+                                            config.courses[idx].endHour = newEnd / 60
+                                            config.courses[idx].endMinute = newEnd % 60
+                                            config.shiftCourses(after: c.id, by: delta)
+                                        }
                                     }
                                     save()
                                 }
@@ -204,10 +212,18 @@ struct DayConfigView: View {
     
     private func adjustAllDuration(_ delta: Int) {
         globalDuration = max(10, globalDuration + delta)
-        for i in config.courses.indices {
-            let newEnd = config.courses[i].startMinuteOfDay + globalDuration
-            config.courses[i].endHour = newEnd / 60
-            config.courses[i].endMinute = newEnd % 60
+        guard !config.courses.isEmpty else { return }
+        let sorted = config.courses.sorted { $0.id < $1.id }
+        for c in sorted {
+            let oldEnd = c.endMinuteOfDay
+            let newEnd = c.startMinuteOfDay + globalDuration
+            let deltaEnd = newEnd - oldEnd
+            guard deltaEnd != 0 else { continue }
+            if let idx = config.courses.firstIndex(where: { $0.id == c.id }) {
+                config.courses[idx].endHour = newEnd / 60
+                config.courses[idx].endMinute = newEnd % 60
+                config.shiftCourses(after: c.id, by: deltaEnd)
+            }
         }
         save()
     }

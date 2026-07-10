@@ -10,6 +10,7 @@ struct ContentView: View {
     @EnvironmentObject var appState: AppState
     @State private var selectedDay: Weekday = .monday
     @State private var showSyncSheet = false
+    @State private var showSoundSheet = false
     
     var body: some View {
         VStack(spacing: 0) {
@@ -43,6 +44,11 @@ struct ContentView: View {
                     Divider()
                     HStack {
                         Spacer()
+                        Button(action: { showSoundSheet = true }) {
+                            Label("自定义铃声", systemImage: "music.note")
+                        }
+                        .buttonStyle(.bordered)
+                        .padding(.horizontal, 12).padding(.vertical, 8)
                         Button(action: { showSyncSheet = true }) {
                             Label("同步到其他天", systemImage: "arrow.triangle.2.circlepath")
                         }
@@ -53,11 +59,22 @@ struct ContentView: View {
                 }
                 .frame(minWidth: 420)
             }
-            Divider()
-            SoundSettingsView().frame(maxWidth: .infinity)
         }
         .frame(minWidth: 560, minHeight: 600)
         .sheet(isPresented: $showSyncSheet) { syncSheet }
+        .sheet(isPresented: $showSoundSheet) {
+            VStack(spacing: 0) {
+                HStack {
+                    Text("自定义铃声").font(.headline)
+                    Spacer()
+                    Button("关闭") { showSoundSheet = false }.buttonStyle(.plain).foregroundColor(.secondary)
+                }
+                .padding()
+                Divider()
+                SoundSettingsView()
+            }
+            .frame(width: 380, height: 240)
+        }
     }
     
     private var syncSheet: some View {
