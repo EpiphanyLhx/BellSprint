@@ -65,15 +65,15 @@ struct ContentView: View {
         .sheet(isPresented: $showSoundSheet) {
             VStack(spacing: 0) {
                 HStack {
-                    Text("自定义铃声").font(.headline)
+                    Text("声音设置").font(.headline)
                     Spacer()
                     Button("关闭") { showSoundSheet = false }.buttonStyle(.plain).foregroundColor(.secondary)
                 }
                 .padding()
                 Divider()
-                SoundSettingsView()
+                ScrollView { SoundSettingsView(audioService: appState.audioService) }
             }
-            .frame(width: 380, height: 240)
+            .frame(width: 420, height: 520)
         }
     }
     

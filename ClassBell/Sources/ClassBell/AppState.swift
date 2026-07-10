@@ -8,7 +8,7 @@ final class AppState: ObservableObject {
     @Published var todayEvents: [BellEvent] = []
     @Published var nextEventText: String = "暂无"
     
-    private let audioService = AudioService()
+    let audioService = AudioService.shared
     private var timer: Timer?
     private var lastRungIDs: Set<String> = []
     private var lastDayCheck = -1

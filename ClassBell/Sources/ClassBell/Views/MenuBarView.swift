@@ -132,7 +132,7 @@ struct MenuBarView: View {
                 MenuBarActionButton(
                     icon: "speaker.wave.2",
                     title: "测试铃声",
-                    action: { AudioService().play(.start) }
+                    action: { AudioService.shared.play(.start) }
                 )
                 Divider().opacity(0.3)
                 MenuBarActionButton(
