@@ -98,24 +98,40 @@ struct MenuBarView: View {
                     .padding(.bottom, 6)
                 } else {
                     List(todayCourses) { course in
+                        let st = status(for: course)
                         HStack(spacing: 6) {
                             Text("\(course.id)")
                                 .font(.system(.caption, design: .rounded).bold())
                                 .frame(width: 20, height: 18)
-                                .background(Color.accentColor.opacity(0.15))
+                                .background(st == .current ? Color.green : (st == .upcoming ? Color.orange : Color.accentColor).opacity(0.2))
                                 .cornerRadius(4)
                             VStack(alignment: .leading, spacing: 0) {
                                 Text(course.name.isEmpty ? "未设置" : course.name)
                                     .font(.body)
-                                    .foregroundColor(course.name.isEmpty ? .secondary : .primary)
                                     .lineLimit(1)
                                 Text("\(course.startString) - \(course.endString)")
                                     .font(.system(.caption2, design: .monospaced))
                                     .foregroundColor(.secondary)
                             }
                             Spacer()
+                            if st == .current {
+                                Image(systemName: "play.fill")
+                                    .font(.system(size: 10))
+                                    .foregroundColor(.green)
+                            } else if st == .upcoming {
+                                Image(systemName: "bell.fill")
+                                    .font(.system(size: 10))
+                                    .foregroundColor(.orange)
+                            }
                         }
-                        .padding(.vertical, 2)
+                        .padding(.vertical, 3)
+                        .padding(.horizontal, 4)
+                        .background(
+                            st == .current ? Color.green.opacity(0.12) :
+                            st == .upcoming ? Color.orange.opacity(0.08) :
+                            Color.clear
+                        )
+                        .cornerRadius(6)
                     }
                     .listStyle(.plain)
                     .frame(height: min(CGFloat(todayCourses.count) * 36, 200))
@@ -196,12 +212,28 @@ struct MenuBarView: View {
         return fmt.string(from: currentTime)
     }
     
+    private var currentMinuteOfDay: Int {
+        let cal = Calendar.current
+        let h = cal.component(.hour, from: currentTime)
+        let m = cal.component(.minute, from: currentTime)
+        return h * 60 + m
+    }
+    
     private var todayCourses: [CourseConfig] {
         let calendar = Calendar.current
         let weekdayIndex = calendar.component(.weekday, from: Date())
         let today = Weekday.fromCalendar(weekdayIndex)
         guard let config = appState.dayConfigs.first(where: { $0.day == today }), config.isActive, config.showCoursesInMenuBar else { return [] }
         return config.courses.sorted { $0.id < $1.id }
+    }
+    
+    private enum CourseStatus { case past, current, upcoming }
+    
+    private func status(for course: CourseConfig) -> CourseStatus {
+        let now = currentMinuteOfDay
+        if now >= course.startMinuteOfDay && now < course.endMinuteOfDay { return .current }
+        if now < course.startMinuteOfDay { return .upcoming }
+        return .past
     }
 
 }
