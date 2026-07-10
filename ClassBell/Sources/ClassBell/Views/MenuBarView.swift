@@ -143,6 +143,24 @@ struct MenuBarView: View {
                         NSApp.activate(ignoringOtherApps: true)
                     }
                 )
+                Divider().opacity(0.3)
+                HStack(spacing: 8) {
+                    Image(systemName: "power")
+                        .font(.system(size: 13))
+                        .frame(width: 16)
+                    Text("开机自启动")
+                        .font(.body)
+                    Spacer()
+                    Toggle("", isOn: Binding(
+                        get: { appState.launchAtLogin },
+                        set: { appState.launchAtLogin = $0 }
+                    ))
+                    .toggleStyle(.switch)
+                    .labelsHidden()
+                    .controlSize(.small)
+                }
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
             }
             
             Divider()

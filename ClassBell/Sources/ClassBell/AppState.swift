@@ -1,10 +1,24 @@
 import Combine
 import Foundation
 import AppKit
+import ServiceManagement
 
 final class AppState: ObservableObject {
     @Published var dayConfigs: [DayConfig] = [] { didSet { saveConfigs() } }
-    @Published var isEnabled = true { didSet { if isEnabled { lastRungIDs.removeAll() } } }
+        @Published var isEnabled = true { didSet { if isEnabled { lastRungIDs.removeAll() } } }
+    @Published var launchAtLogin = false { didSet {
+        do {
+            if launchAtLogin {
+                try SMAppService.mainApp.register()
+            } else {
+                try SMAppService.mainApp.unregister()
+            }
+        } catch {
+            print("SMAppService error: \(error)")
+            DispatchQueue.main.async { self.launchAtLogin = !self.launchAtLogin }
+        }
+        UserDefaults.standard.set(launchAtLogin, forKey: "launch_at_login")
+    } }
     @Published var todayEvents: [BellEvent] = []
     @Published var nextEventText: String = "暂无"
     
@@ -16,6 +30,7 @@ final class AppState: ObservableObject {
     private let saveKey = "ClassBellDayConfigs"
     
     init() {
+        launchAtLogin = UserDefaults.standard.bool(forKey: "launch_at_login")
         loadConfigs()
         if dayConfigs.isEmpty { initDefaultConfigs() }
         updateTodayEvents()
