@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            HSplitView {
+            HStack(spacing: 0) {
                 List(Weekday.allCases.sorted(), id: \.self) { day in
                     let active = appState.dayConfigs.first(where: { $0.day == day })?.isActive ?? false
                     HStack(spacing: 8) {
@@ -26,8 +26,8 @@ struct ContentView: View {
                     .padding(.vertical, 4).padding(.horizontal, 8)
                     .background(selectedDay == day ? Color.accentColor.opacity(0.15) : Color.clear).cornerRadius(6)
                 }
-                .listStyle(.plain).frame(minWidth: 100, idealWidth: 120)
-                
+                .listStyle(.plain).frame(width: 120)
+                Divider()
                 VStack(spacing: 0) {
                     if appState.dayConfigs.contains(where: { $0.day == selectedDay }) {
                         DayConfigView(config: Binding(

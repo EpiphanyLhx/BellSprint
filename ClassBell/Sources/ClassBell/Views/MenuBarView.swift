@@ -179,17 +179,10 @@ struct MenuBarView: View {
         let calendar = Calendar.current
         let weekdayIndex = calendar.component(.weekday, from: Date())
         let today = Weekday.fromCalendar(weekdayIndex)
-        guard let config = appState.dayConfigs.first(where: { $0.day == today }), config.isActive else { return [] }
-        return config.courses.sorted { $0.id < $1.id }.filter { $0.showInMenuBar }
+        guard let config = appState.dayConfigs.first(where: { $0.day == today }), config.isActive, config.showCoursesInMenuBar else { return [] }
+        return config.courses.sorted { $0.id < $1.id }
     }
-    
-    private func colorForType(_ type: BellType) -> Color {
-        switch type {
-        case .pre: return .orange
-        case .start: return .green
-        case .end: return .red
-        }
-    }
+
 }
 
 struct MenuBarActionButton: View {

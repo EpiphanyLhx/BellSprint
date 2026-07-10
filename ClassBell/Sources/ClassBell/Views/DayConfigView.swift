@@ -27,6 +27,7 @@ struct DayConfigView: View {
                 GroupBox(label: Label("基本设置", systemImage: "gearshape")) {
                     VStack(spacing: 10) {
                         HStack { Text("启用"); Spacer(); Toggle("", isOn: $config.isActive).toggleStyle(.switch).labelsHidden().onChange(of: config.isActive) { _ in save() } }
+                        HStack { Text("菜单栏显示课程"); Spacer(); Toggle("", isOn: $config.showCoursesInMenuBar).toggleStyle(.switch).labelsHidden().onChange(of: config.showCoursesInMenuBar) { _ in save() } }
                         HStack { Text("预备铃提前"); Spacer(); Stepper(value: $config.preBellMinutes, in: 0...10) { Text("\(config.preBellMinutes) 分钟").monospacedDigit() }.onChange(of: config.preBellMinutes) { _ in save() } }
                         HStack { Text("第一节课开始"); Spacer(); courseTimeField(hour: $config.startHour, minute: $config.startMinute).onChange(of: config.startHour) { _ in regenerateFromStart() }.onChange(of: config.startMinute) { _ in regenerateFromStart() } }
                         HStack { Text("最后一节课结束"); Spacer(); courseTimeField(hour: $config.endHour, minute: $config.endMinute).onChange(of: config.endHour) { _ in regenerateFromStart() }.onChange(of: config.endMinute) { _ in regenerateFromStart() } }
@@ -94,7 +95,7 @@ struct DayConfigView: View {
                     } else {
                         VStack(spacing: 0) {
                             HStack(spacing: 8) {
-                                Text("").frame(width: 44); Text("节").frame(width: 32)
+                                Text("").frame(width: 44)
                                 Text("预备铃").frame(width: 56)
                                 Text("开始").frame(width: 58); Text("结束").frame(width: 58)
                                 Text("时长").frame(width: 106); Text("科目").frame(width: 80)
@@ -126,10 +127,10 @@ struct DayConfigView: View {
     
     // 休息时间行（开关 + 开始时间 + 时长 +/-）
     private func courseTimeField(hour: Binding<Int>, minute: Binding<Int>) -> some View {
-        HStack(spacing: 1) {
-            TextField("00", value: hour, formatter: hhFmt).textFieldStyle(.roundedBorder).frame(width: 44, height: 24).multilineTextAlignment(.center).font(.system(.body, design: .monospaced))
+        HStack(spacing: 2) {
+            TextField("00", value: hour, formatter: hhFmt).textFieldStyle(.roundedBorder).frame(width: 26, height: 22).multilineTextAlignment(.center).font(.system(.body, design: .monospaced))
             Text(":").font(.system(.caption, design: .monospaced)).foregroundColor(.secondary)
-            TextField("00", value: minute, formatter: mmFmt).textFieldStyle(.roundedBorder).frame(width: 44, height: 24).multilineTextAlignment(.center).font(.system(.body, design: .monospaced))
+            TextField("00", value: minute, formatter: mmFmt).textFieldStyle(.roundedBorder).frame(width: 26, height: 22).multilineTextAlignment(.center).font(.system(.body, design: .monospaced))
         }
     }
 
@@ -265,22 +266,8 @@ struct CourseRowView: View {
     
     var body: some View {
         HStack(spacing: 8) {
-            HStack(spacing: 2) {
-                Button(action: {
-                    course.showInMenuBar.toggle()
-                    appState.updateConfig(config)
-                }) {
-                    Image(systemName: course.showInMenuBar ? "eye" : "eye.slash")
-                        .font(.system(size: 10))
-                        .foregroundColor(course.showInMenuBar ? .accentColor : .secondary)
-                }
-                .buttonStyle(.plain)
-                .help("\(course.showInMenuBar ? "隐藏" : "显示")在菜单栏")
-                Text("\(course.id)")
-                    .font(.system(.caption, design: .rounded).bold())
-            }
+            Text("\(course.id)").font(.system(.caption, design: .rounded).bold())
                 .frame(width: 44, height: 28).background(Color.accentColor.opacity(0.15)).cornerRadius(6)
-            Text("第\(course.id)节").font(.system(.body, design: .monospaced)).frame(width: 32)
             if config.preBellMinutes > 0 {
                 let pm = course.startMinuteOfDay - config.preBellMinutes
                 if pm >= 0 { Text(String(format: "%02d:%02d", pm / 60, pm % 60)).font(.system(.caption2, design: .monospaced)).foregroundColor(.orange).frame(width: 56) }
@@ -330,10 +317,10 @@ struct CourseRowView: View {
     }
     
     private func courseTimeField(hour: Binding<Int>, minute: Binding<Int>) -> some View {
-        HStack(spacing: 1) {
-            TextField("00", value: hour, formatter: hhFmt).textFieldStyle(.roundedBorder).frame(width: 44, height: 24).multilineTextAlignment(.center).font(.system(.body, design: .monospaced))
+        HStack(spacing: 2) {
+            TextField("00", value: hour, formatter: hhFmt).textFieldStyle(.roundedBorder).frame(width: 26, height: 22).multilineTextAlignment(.center).font(.system(.body, design: .monospaced))
             Text(":").font(.system(.caption, design: .monospaced)).foregroundColor(.secondary)
-            TextField("00", value: minute, formatter: mmFmt).textFieldStyle(.roundedBorder).frame(width: 44, height: 24).multilineTextAlignment(.center).font(.system(.body, design: .monospaced))
+            TextField("00", value: minute, formatter: mmFmt).textFieldStyle(.roundedBorder).frame(width: 26, height: 22).multilineTextAlignment(.center).font(.system(.body, design: .monospaced))
         }
     }
 }

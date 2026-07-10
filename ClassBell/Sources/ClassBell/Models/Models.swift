@@ -24,7 +24,6 @@ struct BreakConfig: Codable, Equatable {
 struct CourseConfig: Codable, Identifiable, Equatable {
     var id: Int          // 课程编号 1,2,3...
     var name: String     // 科目名称
-    var showInMenuBar = true
     var startHour: Int
     var startMinute: Int
     var endHour: Int
@@ -79,6 +78,7 @@ struct DayConfig: Codable, Identifiable, Equatable {
     var id: String { day.rawValue }
     var day: Weekday
     var isActive = false
+    var showCoursesInMenuBar = true
     // 保留整体时间范围（用于"一键生成"）
     var startHour = 8; var startMinute = 0
     var endHour = 21; var endMinute = 0
