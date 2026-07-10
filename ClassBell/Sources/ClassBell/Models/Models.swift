@@ -28,17 +28,19 @@ struct CourseConfig: Codable, Identifiable, Equatable {
     var startMinute: Int
     var endHour: Int
     var endMinute: Int
+    var breakDuration = 10  // 课后休息分钟数
     
     var startMinuteOfDay: Int { startHour * 60 + startMinute }
     var endMinuteOfDay: Int { endHour * 60 + endMinute }
     var startString: String { String(format: "%02d:%02d", startHour, startMinute) }
     var endString: String { String(format: "%02d:%02d", endHour, endMinute) }
     
-    static func defaultCourse(id: Int, startHour: Int = 8, startMinute: Int = 0, duration: Int = 45) -> CourseConfig {
+    static func defaultCourse(id: Int, startHour: Int = 8, startMinute: Int = 0, duration: Int = 45, breakDuration: Int = 10) -> CourseConfig {
         let endMin = startMinute + duration
         return CourseConfig(id: id, name: "",
                             startHour: startHour, startMinute: startMinute,
-                            endHour: startHour + endMin / 60, endMinute: endMin % 60)
+                            endHour: startHour + endMin / 60, endMinute: endMin % 60,
+                            breakDuration: breakDuration)
     }
 }
 
@@ -164,7 +166,8 @@ struct DayConfig: Codable, Identifiable, Equatable {
             if e > end { break }
             courses.append(CourseConfig(id: num, name: "",
                                         startHour: current / 60, startMinute: current % 60,
-                                        endHour: e / 60, endMinute: e % 60))
+                                        endHour: e / 60, endMinute: e % 60,
+                                        breakDuration: config.breakDuration))
             current = e + config.breakDuration
             num += 1
         }

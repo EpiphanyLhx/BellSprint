@@ -7,6 +7,7 @@ struct DayConfigView: View {
     @State private var globalDuration: Int = 45
     @State private var isCascading = false
     @State private var courseSnapshots: [Int: (start: Int, end: Int)] = [:]
+    @State private var breakSnapshots: [Int: Int] = [:]
     
     private let hhFmt = HourFormatter()
     private let mmFmt = MinuteFormatter()
@@ -100,14 +101,14 @@ struct DayConfigView: View {
                                 Text("").frame(width: 44)
                                 Text("预备铃").frame(width: 56)
                                 Text("开始").frame(width: 58); Text("结束").frame(width: 58)
-                                Text("时长").frame(width: 106); Text("科目").frame(width: 80)
+                                Text("时长").frame(width: 80); Text("课间").frame(width: 60); Text("科目").frame(width: 80)
                                 Text("").frame(width: 24)
                             }
                             .font(.system(.caption, design: .rounded)).foregroundColor(.secondary).padding(.bottom, 6)
                             Divider()
                             ForEach(0..<config.courses.count, id: \.self) { idx in
                                 CourseRowView(course: $config.courses[idx], config: $config, appState: appState, hhFmt: hhFmt, mmFmt: mmFmt, durFmt: durFmt,
-                                              onTimeChanged: onCourseTimeChanged,
+                                              onTimeChanged: onCourseTimeChanged, onBreakChanged: onBreakChanged,
                                               onDelete: { deleteCourse(id: config.courses[idx].id) })
                             }
                         }
@@ -122,6 +123,7 @@ struct DayConfigView: View {
                 globalDuration = config.courses.map { $0.endMinuteOfDay - $0.startMinuteOfDay }.first ?? config.classDuration
                 for c in config.courses {
                     courseSnapshots[c.id] = (c.startMinuteOfDay, c.endMinuteOfDay)
+                    breakSnapshots[c.id] = c.breakDuration
                 }
             }
         }
@@ -243,9 +245,27 @@ struct DayConfigView: View {
 
     private func refreshSnapshots() {
         courseSnapshots.removeAll()
+        breakSnapshots.removeAll()
         for c in config.courses {
             courseSnapshots[c.id] = (c.startMinuteOfDay, c.endMinuteOfDay)
+            breakSnapshots[c.id] = c.breakDuration
         }
+    }
+    
+    private func onBreakChanged(courseId: Int) {
+        guard let idx = config.courses.firstIndex(where: { $0.id == courseId }) else { return }
+        let course = config.courses[idx]
+        let oldBreak = breakSnapshots[courseId] ?? course.breakDuration
+        let delta = course.breakDuration - oldBreak
+        guard delta != 0 else { return }
+        config.shiftCourses(after: courseId, by: delta)
+        // Update snapshots for cascaded courses
+        for i in idx..<config.courses.count {
+            let c = config.courses[i]
+            courseSnapshots[c.id] = (c.startMinuteOfDay, c.endMinuteOfDay)
+            breakSnapshots[c.id] = c.breakDuration
+        }
+        save()
     }
     
     private func onCourseTimeChanged(courseId: Int) {
@@ -270,6 +290,7 @@ struct CourseRowView: View {
     let appState: AppState
     let hhFmt: HourFormatter; let mmFmt: MinuteFormatter; let durFmt: DurationFieldFormatter
     let onTimeChanged: (Int) -> Void
+    let onBreakChanged: (Int) -> Void
     let onDelete: () -> Void
     
     private var duration: Int { max(0, course.endMinuteOfDay - course.startMinuteOfDay) }
@@ -289,7 +310,12 @@ struct CourseRowView: View {
                 Button(action: { adjustDuration(-5) }) { Image(systemName: "minus.circle").foregroundColor(duration <= 10 ? .gray : .accentColor) }.buttonStyle(.plain).disabled(duration <= 10)
                 TextField("", value: durationBinding, formatter: durFmt).textFieldStyle(.roundedBorder).frame(width: 44).multilineTextAlignment(.center).font(.system(.caption, design: .monospaced))
                 Button(action: { adjustDuration(5) }) { Image(systemName: "plus.circle").foregroundColor(.accentColor) }.buttonStyle(.plain)
-            }.frame(width: 106)
+            }.frame(width: 80)
+            HStack(spacing: 2) {
+                Button(action: { adjustBreak(-5) }) { Image(systemName: "minus.circle").foregroundColor(course.breakDuration <= 0 ? .gray : .accentColor) }.buttonStyle(.plain).disabled(course.breakDuration <= 0)
+                TextField("", value: $course.breakDuration, formatter: durFmt).textFieldStyle(.roundedBorder).frame(width: 36).multilineTextAlignment(.center).font(.system(.caption, design: .monospaced))
+                Button(action: { adjustBreak(5) }) { Image(systemName: "plus.circle").foregroundColor(.accentColor) }.buttonStyle(.plain)
+            }.frame(width: 60)
             TextField("科目", text: $course.name).textFieldStyle(.roundedBorder).frame(width: 80)
             Button(action: onDelete) { Image(systemName: "xmark.circle.fill").foregroundColor(.red.opacity(0.7)).font(.system(size: 15)) }.buttonStyle(.plain).frame(width: 24)
         }
@@ -299,6 +325,10 @@ struct CourseRowView: View {
         .onChange(of: course.startMinute) { _ in onChanged() }
         .onChange(of: course.endHour) { _ in onChanged() }
         .onChange(of: course.endMinute) { _ in onChanged() }
+        .onChange(of: course.breakDuration) { _ in
+            appState.updateConfig(config)
+            DispatchQueue.main.async { onBreakChanged(course.id) }
+        }
         Divider().opacity(0.3)
     }
     
@@ -324,6 +354,10 @@ struct CourseRowView: View {
         let newDuration = max(10, duration + delta)
         let newEnd = course.startMinuteOfDay + newDuration
         course.endHour = newEnd / 60; course.endMinute = newEnd % 60
+    }
+    
+    private func adjustBreak(_ delta: Int) {
+        course.breakDuration = max(0, min(60, course.breakDuration + delta))
     }
     
     private func courseTimeField(hour: Binding<Int>, minute: Binding<Int>) -> some View {
