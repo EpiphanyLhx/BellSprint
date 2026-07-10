@@ -11,6 +11,15 @@ struct ContentView: View {
     @State private var selectedDay: Weekday = .monday
     @State private var showSyncSheet = false
     @State private var showSoundSheet = false
+    @State private var previousDay: Weekday = .monday
+
+    private var transitionEdge: Edge {
+        let prev = previousDay
+        let sorted = Weekday.allCases.sorted()
+        let prevIdx = sorted.firstIndex(of: prev) ?? 0
+        let curIdx = sorted.firstIndex(of: selectedDay) ?? 0
+        return curIdx > prevIdx ? Edge.bottom : Edge.top
+    }
     
     var body: some View {
         VStack(spacing: 0) {
@@ -23,7 +32,7 @@ struct ContentView: View {
                         Spacer()
                     }
                     .contentShape(Rectangle())
-                    .onTapGesture { withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) { selectedDay = day } }
+                    .onTapGesture { withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) { previousDay = selectedDay; selectedDay = day } }
                     .padding(.vertical, 4).padding(.horizontal, 8)
                     .background(selectedDay == day ? Color.accentColor.opacity(0.15) : Color.clear).cornerRadius(6)
                 }
@@ -36,8 +45,9 @@ struct ContentView: View {
                             set: { appState.updateConfig($0) }
                         ), appState: appState)
                         .id(selectedDay)
-                        .transition(.asymmetric(insertion: .move(edge: .top).combined(with: .opacity),
-                                                removal: .move(edge: .bottom).combined(with: .opacity)))
+                        .transition(.asymmetric(
+                            insertion: .move(edge: transitionEdge).combined(with: .opacity),
+                            removal: .move(edge: transitionEdge == .top ? .bottom : .top).combined(with: .opacity)))
                     } else {
                         Spacer(); Text("请选择一天").foregroundColor(.secondary); Spacer()
                     }
