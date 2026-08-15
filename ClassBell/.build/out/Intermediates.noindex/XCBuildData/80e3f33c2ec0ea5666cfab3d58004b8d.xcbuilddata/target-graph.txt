@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'ClassBell-product' in project 'ClassBell'
+➜ Explicit dependency on target 'ClassBell_ClassBell' in project 'ClassBell'
+Target 'ClassBell_ClassBell' in project 'ClassBell' (no dependencies)

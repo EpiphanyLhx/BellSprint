@@ -1,0 +1,760 @@
+[
+  {
+    "isFramework" : true,
+    "moduleName" : "AVFAudio",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/AVFAudio-20N7QSQ1D8D1Q.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "AVFoundation",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/AVFoundation-1VKHLK3IYBB6E.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Accessibility",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-I4HJ76UQ5V7K.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "AppKit",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-1GTYZ1V0YB059.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "AudioToolbox",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/AudioToolbox-SFK1SA1KAUTZ.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "ColorSync",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-3PK1BIV81LW18.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Combine",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Combine-38CCT5WY2E7W9.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreAudio",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudio-2360ALEF1HYO3.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreData",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-NEWCQEVI5VBB.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreFoundation",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-R8DKSABTQD5K.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreGraphics",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-12Y2R21MEDIHN.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreImage",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-RIP8BNG1W5HQ.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreMIDI",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreMIDI-1PA0L0QD82LH9.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreMedia",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreMedia-1W2602DTFL0KJ.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreText",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-1DBO3PDN12MP.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreTransferable",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-1Y7HN34GJWW48.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreVideo",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-23N1KKSNQQM09.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Darwin",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-2ATXBF2S26L7E.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "DataDetection",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-3B6ESV64BHVTO.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "DeveloperToolsSupport",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-NF3LYXNGVG5.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Dispatch",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-2JMJITSA19GTC.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Foundation",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-O0QXV0H4192X.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "IOKit",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-389IQTIGSC1T7.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "ImageIO",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-3CO8W1ZOOJG8F.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "MediaToolbox",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/MediaToolbox-3DY3LDDYLTOI3.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Metal",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-1JICQH4LSQRFA.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "OSLog",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-3UPJJE07KQ22G.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "ObjectiveC",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-338R6CVH0BAWF.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Observation",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Observation-2JDBID9G33MMH.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "QuartzCore",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-IWJZ6FMCUDPI.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Spatial",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-1VEOGVVZ8GJ2A.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Swift",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Swift-10WCHBJRZ6IEI.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "SwiftUI",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUI-1R2QKK357HPUP.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "SwiftUICore",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-FP47DIOI3ZC6.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Symbols",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-Z3KKYW3EQ7UJ.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Synchronization",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Synchronization-2L37W9GKLIQL6.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "System",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/System-30TU211ZUHUD1.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "UniformTypeIdentifiers",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-W82H3H7WFBSX.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "VideoToolbox",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/VideoToolbox-3DTF2Q0LCT3IK.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "XPC",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-3CBWPC7XLNNE2.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_Builtin_float",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-23LK7SO4QG7H1.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_Concurrency",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Concurrency-1K4BCBO345BPU.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation1",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-372FL7QPYGQYX.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation2",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-XAL90SO18CU8.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation3",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-3TKMUH2RYZJH0.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_StringProcessing",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_StringProcessing-32FD4E1EXFY0C.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "os",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/os-2VCHJGY9WRN99.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "simd",
+    "modulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/simd-3V6NYD8JFMBOI.swiftmodule"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AVFAudio.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/AVFAudio-A1GHDIDI1E1PYEMQ4JRUPKK73.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "AVFAudio"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AVFoundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/AVFoundation-2M3LWZFU5XTMJKH1RTPSXGDD0.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "AVFoundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-1UD5AIJICO24F5NI4XMD98ZOS.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Accessibility"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AppKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-ASWR0CPSA3CBL5H21QE35JFNN.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "AppKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ApplicationServices.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/ApplicationServices-9K56NWMSA5CYRMPGGHXYFLNHP.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ApplicationServices"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AudioToolbox.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/AudioToolbox-BC4KUZLK0OIJ3VDG6DII0W6IH.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "AudioToolbox"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CFNetwork.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CFNetwork-9Z8ZLG03EZIT8S250WARN4F63.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CFNetwork"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/cups.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CUPS-AGMO64U1FPVH8RKTVNDFLZFOZ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CUPS"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Carbon.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Carbon-BATDCVFCYJITU1IR923M8QW1T.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Carbon"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ColorSync.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-CBQNP143URPZOQGIKNJR15XVR.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ColorSync"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreAudio.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudio-7TF7MAGHF9OO0VNQPNY4FN3A6.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreAudio"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreAudioTypes.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudioTypes-R9HK368FAJROGSCCSILQOPHH.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreAudioTypes"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-76P70PAUG5353EG65GF3MSOPH.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreData"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-2C1NLQMJAANFUBY7NA13IB0U2.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreFoundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-AZUA8JLXBA1Z89FBMV2H40TR6.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreGraphics"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreImage.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-1IJGQGOYDAYX28NVUBG0JUL5F.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreImage"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreMIDI.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreMIDI-CP7U3DS20BU8J00ZMDZEO1G91.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreMIDI"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreMedia.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreMedia-75CRCQTY42QX44ED9ZK8TJO4Y.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreMedia"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreServices.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreServices-EBXLV8R36DPZ0NG4LCWQBWOQB.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreServices"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-Z4W905XCLJTB9ARZ91P02W86.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreText"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-EZ2D9I8UTY7T4MIZHUIN3PDLB.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreTransferable"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-A0FTTG2JG4PKQU0VZ303I5PLW.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreVideo"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/Darwin.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-26NUB0DUTMK4ZSX6I5NL7W19E.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Darwin"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-8HR0W7KR22EY1CE3J9BN4I1VW.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DataDetection"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-83UG3HYBSA9CWQZXHHDKSK9F3.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DeveloperToolsSupport"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DiskArbitration.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/DiskArbitration-8OW91LWVN9JMKBY2454ZFQ0CI.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DiskArbitration"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/dispatch.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-B05ZNFTAPQJWZO1KY7JE3VT91.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Dispatch"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-1J0ARZNUK8FXOC4JN5U4OUE97.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Foundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/IOKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-4NB9ARXB27B0JKLA9PDQ0KIG9.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "IOKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/IOSurface.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/IOSurface-1WXQXA92YX7N5S3DBYI6ROV26.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "IOSurface"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ImageIO.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-422LPZCWWBR6X83HXXZL4XSP9.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ImageIO"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinBasic.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/MachO-2TLTHD7NH7K2J2AWYIYZV1RPI.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "MachO"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/MediaToolbox.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/MediaToolbox-5BLSQ8YD0EBYWABYGGNOYT6ZO.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "MediaToolbox"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Metal.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-4O38UFX8PTO9K7GMZAX0VYLI1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Metal"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-A68TKUU8V9O5IVEB8BPQRS815.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "OSLog"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/ObjectiveC.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-8JSQRIBEDQ1ZGKASCIGIS975K.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ObjectiveC"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/OpenGL.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/OpenGL-8YF2P1HTSDYJ5S3OPJMB7EHU7.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "OpenGL"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-OD1QF5FALDUEIKL46AH6RE8T.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "QuartzCore"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Security-F4J2RPIIJXHR3UJW53NOMPBF9.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Security"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ServiceManagement.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/ServiceManagement-B0R134YC329CSBPQXX2EMSMQ1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ServiceManagement"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/Spatial\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-E76DA042ZS1ZZT3Y2IIHVTFC0.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Spatial"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftShims-4N8CE1YBS8JXM4THPPXALD9M5.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftShims"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/SwiftUI.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUI-8U58X3AWS22VVIOV8WTM5VL4.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftUI"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-ET4NOHMXW5UJNVKC84OTGG6N2.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftUICore"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-2BVQR4NJAC2PDZM0Y5PE56XRU.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Symbols"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-CDQFF8HUJRRCJOEDT6E1YJDT1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "UniformTypeIdentifiers"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/VideoToolbox.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/VideoToolbox-30DL0XGAQ5BPR5B6YDRYPSEI2.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "VideoToolbox"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/xpc.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-899QXGYGED2WP2PNE0OAI7GNK.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "XPC"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation1.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_AvailabilityInternal-26U0G5IXNE9NP12MC23EH7PY8.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_AvailabilityInternal"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-U1V86IC0Z2EJ58S5CXOKKWR8.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_float"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_intrinsics-2342E8AINHT4CYUWTDP9XP2Y1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_intrinsics"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_inttypes-DSOMEF0AW1W3706LFLCDQ1U3Z.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_inttypes"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_limits-4FYHQ37VHALICBESK22Q1KGPT.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_limits"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdarg-2GN72AHEL5JKKDJ6OPN32XSV8.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdarg"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdatomic-15HQR3G78DI1D798W707KXPTI.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdatomic"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdbool-A9KQGB3C2QD1ESGSLMCDBOXWQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdbool"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stddef-A04VMTO4L7LIQMTFQ9Z42B6.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stddef"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdint-6BGVXY7DUFBPY7231CH6FBDJF.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdint"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_tgmath-225WUCILS49LY8NDP1CB81N7T.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_tgmath"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation1.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-84CUWS6CZF7BDHXFY4HGGEN6B.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation1"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation2.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-8OHZGVN9JTHTLTW71ANJ8TMRU.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation2"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation3.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-2AFWWEBESJB678K574IXGBGUD.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation3"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/_SwiftConcurrencyShims-87L5Z4G87NULQML4YXJEYK8VI.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_SwiftConcurrencyShims"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/launch.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/launch-7Y47A4H5XW65BGD0PEH0Q6U57.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "launch"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/libDER\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/libDER-C2MGLYTS98BROJDEJKKVBU0NY.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "libDER"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/libkern.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/libkern-EGXCL8K9HPWAN5J2QYFOGJ1JQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "libkern"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/os-DAHWO4F532O5SLU0WBZQJFR5A.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/os_object-DJ7UWEJ75YA2OX977V0JBNXB7.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os_object"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/os_workgroup-BVDQ2066YT3F8ZMCF505O2ZTR.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os_workgroup"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/ptrauth-F0BHZVO736OYYJBSZO5BRUF9I.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ptrauth"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/ptrcheck-2H6HKWUL0JCZIEC1F7GDY691M.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ptrcheck"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/simd\/module.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/simd-D2ZC6UIN8Y9D2I5FAUULXAZR0.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "simd"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/c_standard_library.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/string_h-6A3UU2UCGXPPHH17RTTBJTVQL.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "string_h"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation2.modulemap",
+    "clangModulePath" : "\/Users\/LHX\/Desktop\/时钟\/ClassBell\/.build\/out\/SDKExplicitPrecompiledModules\/sys_types-1VCT5GTF3AP1IB8AJ1DQ91J5M.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "sys_types"
+  }
+]

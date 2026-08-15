@@ -1,0 +1,11 @@
+{
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "abi-baseline-json" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell.abi.json",
+    "const-values" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell-primary.swiftconstvalues",
+    "dependencies" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell-primary.d",
+    "diagnostics" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell-primary.dia",
+    "swiftdoc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell.swiftdoc",
+    "swiftmodule" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell.swiftmodule",
+    "swiftsourceinfo" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell.swiftsourceinfo"
+  }
+}

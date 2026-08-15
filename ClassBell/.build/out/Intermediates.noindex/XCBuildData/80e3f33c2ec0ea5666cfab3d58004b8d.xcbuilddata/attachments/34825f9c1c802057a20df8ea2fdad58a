@@ -1,0 +1,66 @@
+{
+  "" : {
+    "const-values" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell-primary.swiftconstvalues",
+    "dependencies" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell-primary.d",
+    "diagnostics" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell-primary.dia",
+    "emit-module-dependencies" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell-primary-emit-module.dia",
+    "pch" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBell-primary.swiftdeps"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/resource_bundle_accessor.o"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/AppState.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/AppState.o"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/ClassBellApp.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBellApp.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBellApp.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ClassBellApp.o"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Models/Models.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/Models.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/Models.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/Models.o"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Services/AudioService.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/AudioService.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/AudioService.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/AudioService.o"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Services/BellScheduler.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/BellScheduler.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/BellScheduler.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/BellScheduler.o"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/ContentView.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/DayConfigView.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/DayConfigView.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/DayConfigView.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/DayConfigView.o"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/MenuBarView.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/MenuBarView.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/MenuBarView.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/MenuBarView.o"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/SoundSettingsView.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/SoundSettingsView.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/SoundSettingsView.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/SoundSettingsView.o"
+  },
+  "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Views/TimeFieldFormatter.swift" : {
+    "index-unit-output-path" : "/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/TimeFieldFormatter.o",
+    "llvm-bc" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/TimeFieldFormatter.bc",
+    "object" : "/Users/LHX/Desktop/时钟/ClassBell/.build/out/Intermediates.noindex/ClassBell.build/Release/ClassBell-p.build/Objects-normal/arm64/TimeFieldFormatter.o"
+  }
+}
