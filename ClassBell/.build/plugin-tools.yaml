@@ -26,6 +26,12 @@ commands:
     outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.product/Objects.LinkFileList"]
     description: "Write auxiliary file /Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell.product/Objects.LinkFileList"
 
+  "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/AppIcon.icns":
+    tool: copy-tool
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Resources/AppIcon.icns"]
+    outputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/AppIcon.icns"]
+    description: "Copying /Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Resources/AppIcon.icns"
+
   "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/end_bell.wav":
     tool: copy-tool
     inputs: ["/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Resources/end_bell.wav"]
@@ -89,7 +95,7 @@ commands:
 
   "ClassBell-arm64-apple-macosx-release.module-resources":
     tool: phony
-    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/end_bell.wav","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/pre_bell.wav","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/start_bell.wav","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/上课铃声  .mp3","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/下课铃声.mp3"]
+    inputs: ["/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/AppIcon.icns","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/end_bell.wav","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/pre_bell.wav","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/start_bell.wav","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/上课铃声  .mp3","/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/下课铃声.mp3"]
     outputs: ["<ClassBell-arm64-apple-macosx-release.module-resources>"]
 
   "PackageStructure":

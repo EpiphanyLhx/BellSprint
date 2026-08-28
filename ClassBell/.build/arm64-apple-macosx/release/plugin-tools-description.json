@@ -3,6 +3,20 @@
 
   ],
   "copyCommands" : {
+    "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/AppIcon.icns" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/LHX/Desktop/时钟/ClassBell/Sources/ClassBell/Resources/AppIcon.icns"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/AppIcon.icns"
+        }
+      ]
+    },
     "/Users/LHX/Desktop/时钟/ClassBell/.build/arm64-apple-macosx/release/ClassBell_ClassBell.bundle/end_bell.wav" : {
       "inputs" : [
         {
