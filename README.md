@@ -1,6 +1,6 @@
 # BellSprint
 
-BellSprint 是一款 macOS 菜单栏常驻应用，适用于固定课表排课需求的场景。它能在预设的时间点自动播放预备铃、上课铃、下课铃，帮助你精准管理每节课的时间。
+BellSprint 是一款支持 macOS 和 Windows 的课程铃声应用，适用于固定课表排课需求的场景。它能在预设的时间点自动播放预备铃、上课铃、下课铃，帮助你精准管理每节课的时间。
 
 ## 技术栈
 
@@ -14,6 +14,9 @@ BellSprint 是一款 macOS 菜单栏常驻应用，适用于固定课表排课�
   <img src="https://img.shields.io/badge/SPM-FA7343?logo=swift&logoColor=white" alt="Swift Package Manager">
   <img src="https://img.shields.io/badge/UserDefaults-999999?logo=apple&logoColor=white" alt="UserDefaults">
   <img src="https://img.shields.io/badge/SMAppService-666666?logo=apple&logoColor=white" alt="SMAppService">
+  <img src="https://img.shields.io/badge/Windows-10%2F11-0078D4?logo=windows" alt="Windows 10/11">
+  <img src="https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet" alt=".NET 8">
+  <img src="https://img.shields.io/badge/WPF-Desktop-0078D4" alt="WPF">
 </p>
 
 ## 功能特性
@@ -32,10 +35,13 @@ BellSprint 是一款 macOS 菜单栏常驻应用，适用于固定课表排课�
 - **配置同步** — 支持将某天的配置一键同步到其他天
 - **开机自启动** — 通过 macOS 原生登录项实现
 
+Windows 版同样支持以上完整功能，使用系统托盘代替 macOS 菜单栏。
+
 ## 系统要求
 
 - macOS 14.0 (Sonoma) 及以上
 - Xcode 15+ 或 Xcode Command Line Tools（仅构建时需要）
+- Windows 10/11 x64（Windows 发布包为自包含版本，无需额外安装 .NET）
 
 ## 构建与运行
 
@@ -93,6 +99,8 @@ ClassBell/
 │   └── ClassBell-macOS/           # macOS 特定代码
 └── .build/                        # SPM 构建产物
 ```
+
+Windows 版位于 `Windows/`，包含 WPF 应用、跨平台核心逻辑、单元测试和 GitHub Actions 自动打包工作流。详见 [`Windows/README.md`](Windows/README.md)。
 
 ## 使用说明
 

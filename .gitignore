@@ -1,0 +1,6 @@
+.DS_Store
+**/.DS_Store
+Windows/**/bin/
+Windows/**/obj/
+artifacts/
+Windows/发布/

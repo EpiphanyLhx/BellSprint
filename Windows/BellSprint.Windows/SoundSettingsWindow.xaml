@@ -1,0 +1,52 @@
+<Window x:Class="BellSprint.Windows.SoundSettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="声音设置" Width="560" Height="500" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <DockPanel Margin="18">
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="测试预备铃" Click="TestPre_Click" />
+            <Button Content="测试上课铃" Click="TestStart_Click" />
+            <Button Content="测试下课铃" Click="TestEnd_Click" />
+            <Button Content="关闭" IsDefault="True" Click="Close_Click" Background="#2563EB" Foreground="White" />
+        </StackPanel>
+        <StackPanel>
+            <GroupBox Header="音量">
+                <DockPanel>
+                    <TextBlock x:Name="VolumeText" DockPanel.Dock="Right" Width="55" TextAlignment="Right" VerticalAlignment="Center" />
+                    <Slider x:Name="VolumeSlider" Minimum="0" Maximum="100" TickFrequency="5" IsSnapToTickEnabled="True" ValueChanged="VolumeSlider_ValueChanged" />
+                </DockPanel>
+            </GroupBox>
+            <GroupBox Header="输出设备">
+                <DockPanel>
+                    <Button DockPanel.Dock="Right" Content="刷新" Click="RefreshDevices_Click" />
+                    <ComboBox x:Name="DevicesBox" Margin="3" SelectionChanged="DevicesBox_SelectionChanged" />
+                </DockPanel>
+            </GroupBox>
+            <GroupBox Header="自定义铃声">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="90" />
+                        <ColumnDefinition Width="70" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions><RowDefinition/><RowDefinition/><RowDefinition/></Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="预备铃" VerticalAlignment="Center" />
+                    <TextBox x:Name="PrePathBox" Grid.Row="0" Grid.Column="1" IsReadOnly="True" />
+                    <Button Grid.Row="0" Grid.Column="2" Content="选择文件" Click="SelectPre_Click" />
+                    <Button Grid.Row="0" Grid.Column="3" Content="默认" Click="ClearPre_Click" />
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="上课铃" VerticalAlignment="Center" />
+                    <TextBox x:Name="StartPathBox" Grid.Row="1" Grid.Column="1" IsReadOnly="True" />
+                    <Button Grid.Row="1" Grid.Column="2" Content="选择文件" Click="SelectStart_Click" />
+                    <Button Grid.Row="1" Grid.Column="3" Content="默认" Click="ClearStart_Click" />
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="下课铃" VerticalAlignment="Center" />
+                    <TextBox x:Name="EndPathBox" Grid.Row="2" Grid.Column="1" IsReadOnly="True" />
+                    <Button Grid.Row="2" Grid.Column="2" Content="选择文件" Click="SelectEnd_Click" />
+                    <Button Grid.Row="2" Grid.Column="3" Content="默认" Click="ClearEnd_Click" />
+                </Grid>
+            </GroupBox>
+            <TextBlock Text="支持 WAV、MP3、M4A、AIFF。文件会复制到 %AppData%\BellSprint\Sounds，原文件移动后不影响使用。"
+                       Foreground="#6B7280" TextWrapping="Wrap" />
+        </StackPanel>
+    </DockPanel>
+</Window>
