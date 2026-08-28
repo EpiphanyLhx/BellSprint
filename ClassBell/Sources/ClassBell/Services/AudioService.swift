@@ -56,8 +56,8 @@ final class AudioService: ObservableObject {
            let data = try? Data(contentsOf: URL(fileURLWithPath: p)) {
             soundData[type] = data; return
         }
-        if let url = Bundle.module.url(forResource: fn, withExtension: "wav")
-           ?? Bundle.main.url(forResource: fn, withExtension: "wav"),
+        if let url = Bundle.main.url(forResource: fn, withExtension: "wav")
+           ?? Bundle.module.url(forResource: fn, withExtension: "wav"),
            let data = try? Data(contentsOf: url) {
             soundData[type] = data
         }
